@@ -36,7 +36,7 @@ public class Battle extends GPProblem implements SimpleProblemForm{
 				String output;
 				output = String.format("output/tree%d.txt",count);
 				String input;
-				input = String.format("input/results%d.txt",count);
+				input = String.format("input/results0.txt",count);
 				count++;
 				
 				//We output the individual's tree so we can handmake them for testing

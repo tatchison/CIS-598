@@ -1,6 +1,6 @@
 Evaluated: F
 Fitness: d4607182418800017408|1.0|i0|
 Tree 0:
- (slowDown (if100te enemy enemy enemy))
+ (sequential (if100te enemy enemy enemy) (sequential (reverse enemy) (turnRight enemy)))
 Tree 1:
- (if100te (sequential (slowDown (if100te enemy enemy enemy)) (fire (if50te enemy enemy enemy))) (if50te (speedUp enemy) (forward (if200te enemy enemy enemy)) (turnRight (sequential enemy enemy))) (if200te (fire (sequential enemy enemy)) (turnRight (fire enemy)) enemy))
+ (fire (sequential enemy (speedUp (forward enemy))))
