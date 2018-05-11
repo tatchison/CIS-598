@@ -1,0 +1,6 @@
+Evaluated: F
+Fitness: d0|0.0|i0|
+Tree 0:
+ enemy
+Tree 1:
+ (if100te (sequential (slowDown (if100te enemy enemy enemy)) (fire (if50te enemy enemy enemy))) (if50te (speedUp enemy) (forward (if200te enemy enemy enemy)) (turnRight (sequential enemy enemy))) (if200te (fire (sequential enemy enemy)) (turnRight (fire enemy)) (sequential (sequential enemy enemy) (reverse enemy))))

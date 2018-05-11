@@ -1,0 +1,8 @@
+CIS 598 Final Presentation Time Log:
+	Research: 			20 hrs.
+	Coding:				6 hrs. 12 mins.
+	Testing:			6 hrs. 46 mins.
+	Presentation Prep:	3 hrs.
+	Total:				35hrs. 58 mins.
+	Lines of Code:		710
+	Lines of Code/hr:	19.7 lines/hr

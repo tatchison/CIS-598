@@ -1,0 +1,47 @@
+parent.0 = ../../gp/koza/koza.params
+
+generations = 5
+
+pop.subpop.0.size = 10
+pop.subpop = ec.SubPopulation
+
+pop.subpop.0.species.ind.numtrees = 2
+# Move Tree
+pop.subpop.0.species.ind.tree.0 = ec.gp.GPTree
+pop.subpop.0.species.ind.tree.0.tc = tc0
+# Fire Tree
+pop.subpop.0.species.ind.tree.1 = ec.gp.GPTree
+pop.subpop.0.species.ind.tree.1.tc = tc0
+
+gp.fs.size = 1
+gp.fs.0 = ec.gp.GPFunctionSet
+gp.fs.0.name = f0
+
+gp.fs.0.size = 12
+gp.fs.0.func.0 = ec.app.robocode.Enemy
+gp.fs.0.func.0.nc = nc0
+gp.fs.0.func.1 = ec.app.robocode.fire
+gp.fs.0.func.1.nc = nc1
+gp.fs.0.func.2 = ec.app.robocode.forward
+gp.fs.0.func.2.nc = nc1
+gp.fs.0.func.3 = ec.app.robocode.reverse
+gp.fs.0.func.3.nc = nc1
+gp.fs.0.func.4 = ec.app.robocode.slowDown
+gp.fs.0.func.4.nc = nc1
+gp.fs.0.func.5 = ec.app.robocode.speedUp
+gp.fs.0.func.5.nc = nc1
+gp.fs.0.func.6 = ec.app.robocode.turnLeft
+gp.fs.0.func.6.nc = nc1
+gp.fs.0.func.7 = ec.app.robocode.turnRight
+gp.fs.0.func.7.nc = nc1
+gp.fs.0.func.8 = ec.app.robocode.sequential
+gp.fs.0.func.8.nc = nc2
+gp.fs.0.func.9 = ec.app.robocode.if50te
+gp.fs.0.func.9.nc = nc3
+gp.fs.0.func.10 = ec.app.robocode.if100te
+gp.fs.0.func.10.nc = nc3
+gp.fs.0.func.11 = ec.app.robocode.if200te
+gp.fs.0.func.11.nc = nc3
+
+eval.problem = ec.app.robocode.Battle
+eval.problem.data = ec.app.robocode.EnemyPos

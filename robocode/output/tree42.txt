@@ -1,0 +1,6 @@
+Evaluated: F
+Fitness: d4607182418800017408|1.0|i0|
+Tree 0:
+ (turnLeft enemy)
+Tree 1:
+ (sequential (fire (sequential (turnRight (fire (if50te enemy enemy enemy))) (turnLeft (turnRight enemy)))) (sequential (turnRight (sequential enemy enemy)) (turnLeft (turnRight enemy))))
